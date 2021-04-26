@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animations_Ex1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdx-8p-X0A">
+                                <rect key="frame" x="121" y="122" width="133" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7ZU-cp-6oI"/>
+                                    <constraint firstAttribute="width" constant="133" id="euc-9N-1uP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLX-Qw-YkO">
+                                <rect key="frame" x="117" y="283" width="141" height="30"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="C0i-n4-3Zv"/>
+                                    <constraint firstAttribute="height" constant="30" id="mQV-EP-o39"/>
+                                </constraints>
+                                <state key="normal" title="Show Question">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showQButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SFq-JX-vPv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgb-M7-QhO">
+                                <rect key="frame" x="118" y="365" width="139" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.68085394970000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7Fg-Kc-aBp"/>
+                                    <constraint firstAttribute="width" constant="139" id="pQc-ed-3x7"/>
+                                </constraints>
+                                <state key="normal" title="Hide Question">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideQButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rzg-7x-tZj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bLX-Qw-YkO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6qR-5l-rkz"/>
+                            <constraint firstItem="lgb-M7-QhO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8hg-PI-IUh"/>
+                            <constraint firstItem="bLX-Qw-YkO" firstAttribute="top" secondItem="pdx-8p-X0A" secondAttribute="bottom" constant="140" id="H6w-CT-4v9"/>
+                            <constraint firstItem="pdx-8p-X0A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RKz-hC-Hr2"/>
+                            <constraint firstItem="pdx-8p-X0A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="102" id="vsi-VH-TP0"/>
+                            <constraint firstItem="lgb-M7-QhO" firstAttribute="top" secondItem="bLX-Qw-YkO" secondAttribute="bottom" constant="52" id="w4g-fs-EV0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hideQButton" destination="lgb-M7-QhO" id="MmL-ct-yyC"/>
+                        <outlet property="questionLabel" destination="pdx-8p-X0A" id="gRM-uu-Oiw"/>
+                        <outlet property="showQButton" destination="bLX-Qw-YkO" id="lfO-RL-z3E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

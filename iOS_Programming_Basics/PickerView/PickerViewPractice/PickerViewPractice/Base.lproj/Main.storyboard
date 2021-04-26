@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XsA-ue-TAp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerViewPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruit List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79D-4o-ADX">
+                                <rect key="frame" x="141.5" y="187.5" width="92" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.2627450980392157" green="0.31372549019607843" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIr-K8-4JS">
+                                <rect key="frame" x="27.5" y="223.5" width="320" height="216"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.94901960784313721" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ipx-cq-MXu"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tHQ-EU-bDd"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0l-8R-Zd7">
+                                <rect key="frame" x="146" y="95" width="83" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="0.2627450980392157" green="0.31372549019607843" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74901960784313726" green="0.71764705882352942" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="c0l-8R-Zd7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="Ilv-3F-WO5"/>
+                            <constraint firstItem="79D-4o-ADX" firstAttribute="top" secondItem="c0l-8R-Zd7" secondAttribute="bottom" constant="54" id="JCv-ki-rsW"/>
+                            <constraint firstItem="dIr-K8-4JS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fCp-kH-5DS"/>
+                            <constraint firstItem="79D-4o-ADX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hvm-o0-1N0"/>
+                            <constraint firstItem="dIr-K8-4JS" firstAttribute="top" secondItem="79D-4o-ADX" secondAttribute="bottom" constant="9" id="xQ6-Vb-fQV"/>
+                            <constraint firstItem="c0l-8R-Zd7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zId-Tc-FKp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chosenFruitLabel" destination="c0l-8R-Zd7" id="CkZ-6P-rMf"/>
+                        <outlet property="fruitPicker" destination="dIr-K8-4JS" id="zMa-UL-hLO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162" y="144"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="o3s-ur-I1S">
+            <objects>
+                <viewController id="XsA-ue-TAp" customClass="SecondViewController" customModule="PickerViewPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ou4-vw-Hev"/>
+                        <viewControllerLayoutGuide type="bottom" id="BYc-b8-B46"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vlC-if-oBN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xo5-sh-v3m">
+                                <rect key="frame" x="28" y="238" width="320" height="216"/>
+                                <color key="backgroundColor" red="0.45098039215686275" green="0.098039215686274508" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XsA-ue-TAp" id="T7R-ba-J15"/>
+                                    <outlet property="delegate" destination="XsA-ue-TAp" id="3VX-FE-FL7"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yU-h5-5hX">
+                                <rect key="frame" x="67" y="70" width="242" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="NaH-3A-AJH"/>
+                                    <constraint firstAttribute="height" constant="117" id="SBl-pl-olh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="87"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79607843137254897" green="0.82352941176470584" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3yU-h5-5hX" firstAttribute="top" secondItem="Ou4-vw-Hev" secondAttribute="bottom" constant="50" id="9Qo-mC-ukq"/>
+                            <constraint firstItem="xo5-sh-v3m" firstAttribute="leading" secondItem="vlC-if-oBN" secondAttribute="leadingMargin" constant="12" id="Zrk-cv-8m4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xo5-sh-v3m" secondAttribute="trailing" constant="11" id="gGF-Se-Voj"/>
+                            <constraint firstItem="3yU-h5-5hX" firstAttribute="centerX" secondItem="vlC-if-oBN" secondAttribute="centerX" id="m86-Zt-I6I"/>
+                            <constraint firstItem="xo5-sh-v3m" firstAttribute="top" secondItem="3yU-h5-5hX" secondAttribute="bottom" constant="51" id="ngI-Oy-HB5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emojiFace" destination="3yU-h5-5hX" id="S8L-bC-Dje"/>
+                        <outlet property="picker" destination="xo5-sh-v3m" id="Oa1-RB-wJC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AgP-4u-SoC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.60000000000002" y="142.57871064467767"/>
+        </scene>
+    </scenes>
+</document>

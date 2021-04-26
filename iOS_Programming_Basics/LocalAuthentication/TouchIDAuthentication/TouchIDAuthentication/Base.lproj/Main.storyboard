@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TouchIDAuthentication" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hA-Ty-UcS">
+                                <rect key="frame" x="78.5" y="227" width="218" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="Cq5-G1-3v3"/>
+                                    <constraint firstAttribute="width" constant="218" id="dpv-vl-nmi"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Fingerprint"/>
+                                <connections>
+                                    <action selector="fingerAuthenticationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z4i-2e-ags"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finger Print Required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TO8-N1-z8I">
+                                <rect key="frame" x="93" y="448" width="189" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="LoV-ge-PDW"/>
+                                    <constraint firstAttribute="height" constant="21" id="eA7-9H-LQ8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restricted" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7U-b2-SGa">
+                                <rect key="frame" x="107" y="67" width="161" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="AX1-hb-X6v"/>
+                                    <constraint firstAttribute="height" constant="36" id="OqD-F4-ERu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eX-cA-nGS">
+                                <rect key="frame" x="62" y="287.5" width="252" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="0g6-Aa-6iU"/>
+                                    <constraint firstAttribute="width" constant="252" id="9GR-vD-a2s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try again" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeL-n4-kgM">
+                                <rect key="frame" x="146" y="198" width="82" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Vqa-LU-Bq1"/>
+                                    <constraint firstAttribute="width" constant="82" id="vcK-wE-EWi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuX-SM-tJ0">
+                                <rect key="frame" x="16" y="43" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5b9-su-MlB"/>
+                                    <constraint firstAttribute="width" constant="72" id="aXi-as-qRG"/>
+                                </constraints>
+                                <state key="normal" title="Sign out">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I8a-4Q-jyW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1hA-Ty-UcS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4pW-TU-xcl"/>
+                            <constraint firstItem="TO8-N1-z8I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Bw-lx-5iR"/>
+                            <constraint firstItem="1hA-Ty-UcS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6ed-nl-1gq"/>
+                            <constraint firstItem="uuX-SM-tJ0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EpS-GP-wGm"/>
+                            <constraint firstItem="1hA-Ty-UcS" firstAttribute="top" secondItem="FeL-n4-kgM" secondAttribute="bottom" constant="8" id="KqP-Cg-1Yy"/>
+                            <constraint firstItem="uuX-SM-tJ0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="SRz-F5-WDI"/>
+                            <constraint firstItem="9eX-cA-nGS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SWl-vH-Ol3"/>
+                            <constraint firstItem="F7U-b2-SGa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="b5Y-LB-MZY"/>
+                            <constraint firstItem="FeL-n4-kgM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bmD-DB-tdE"/>
+                            <constraint firstItem="TO8-N1-z8I" firstAttribute="top" secondItem="1hA-Ty-UcS" secondAttribute="bottom" constant="8" id="fuf-7Z-yzg"/>
+                            <constraint firstItem="F7U-b2-SGa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g9R-ZE-n4i"/>
+                            <constraint firstItem="9eX-cA-nGS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tWf-8W-QHy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fingerAuthenticationLabel" destination="1hA-Ty-UcS" id="ahz-X1-Y2M"/>
+                        <outlet property="requiredLabel" destination="TO8-N1-z8I" id="LDI-6l-gEJ"/>
+                        <outlet property="restrictedLabel" destination="F7U-b2-SGa" id="XYr-dC-w6z"/>
+                        <outlet property="signOutLabel" destination="uuX-SM-tJ0" id="TDg-FY-TkL"/>
+                        <outlet property="tryAgainLabel" destination="FeL-n4-kgM" id="isH-gg-qzw"/>
+                        <outlet property="welcomeLabel" destination="9eX-cA-nGS" id="yct-qg-1cq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fingerprint" width="512" height="512"/>
+    </resources>
+</document>

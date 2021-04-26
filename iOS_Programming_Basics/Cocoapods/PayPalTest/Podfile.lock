@@ -1,0 +1,19 @@
+PODS:
+  - CardIO (5.4.1)
+  - PayPal-iOS-SDK (2.16.3):
+    - PayPal-iOS-SDK/CardIO (= 2.16.3)
+    - PayPal-iOS-SDK/Core (= 2.16.3)
+  - PayPal-iOS-SDK/CardIO (2.16.3):
+    - CardIO (~> 5.4.1)
+  - PayPal-iOS-SDK/Core (2.16.3)
+
+DEPENDENCIES:
+  - PayPal-iOS-SDK
+
+SPEC CHECKSUMS:
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  PayPal-iOS-SDK: db237a752c0b388b93a0b9915b30e26878732bdb
+
+PODFILE CHECKSUM: d2d6528ebca59726beea299ce61802fbee72c55b
+
+COCOAPODS: 1.2.0
